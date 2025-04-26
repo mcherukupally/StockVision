@@ -1,6 +1,5 @@
 // src/StockPage.jsx
 import React, { useState, useEffect } from 'react';
-import './StockPage.css';
 
 export default function StockPage() {
   // ── STATE ──────────────────────────────────────────────────────
