@@ -1,40 +1,46 @@
-/* src/styles/globals.css /
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/ Reset some browser defaults */
-{
+/* Reset default browser styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-  
-  /* Apply a clean, minimal font to the whole site */
-  body {
-    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
-    background-color: #ffffff; /* White background for the site */
-    color: #1a1a1a; /* Dark text for readability */
-    min-height: 100vh;
-  }
-  
-  /* Set consistent link style */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Make all inputs and buttons look consistent */
-  input, button {
-    font-family: inherit;
-  }
-  
-  /* Headings look nice */
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: #1a1a1a;
-  }
-  
-  /* Utility classes if needed */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

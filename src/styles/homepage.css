@@ -1,156 +1,58 @@
+/* src/styles/homepage.css */
+
 :root {
-    --sv-blue: #1E87F0;
-    --sv-red: #E74C3C;
-    --sv-green: #27AE60;
-    --sv-grey: #6C757D;
-    --card-radius: .75rem;
-    --card-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
- 
-  /* Base reset & body */
-  body {
-    font-family: "Segoe UI", Roboto, sans-serif;
-    background: #f8f9fa;
-    margin: 0;
-  }
- 
-  /* NAVBAR */
-  .navbar {
-    background-color: var(--sv-blue) !important;
-  }
-  .navbar-brand,
-  .nav-link {
-    color: #fff !important;
-    font-weight: 500;
-  }
-  /* Make STOCKVISION brand text blue */
-  .navbar-brand {
-    color: var(--sv-blue) !important;
-  }
- 
-  /* HERO SECTION */
-  header {
-    padding: 6rem 0 4rem;
-    text-align: center;
-  }
-  header h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--sv-blue);
-    text-transform: uppercase;
-    margin-bottom: .5rem;
-  }
-  header p.lead {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  header .form-control {
-    max-width: 300px;
-  }
-  header .btn-primary {
-    background: var(--sv-blue);
-    border-color: var(--sv-blue);
-  }
- 
-  /* CARDS */
-  .card {
-    border: none;
-    border-radius: var(--card-radius);
-    box-shadow: var(--card-shadow);
-  }
-  .card-header {
-    background: transparent;
-    border-bottom: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-  }
-  .card-header .subtext {
-    display: block;
-    font-size: .875rem;
-    color: var(--sv-grey);
-    font-weight: 400;
-    margin-top: .25rem;
-  }
-  .card-footer {
-    background: transparent;
-    border-top: none;
-  }
- 
-  /* LIST ITEMS */
-  .list-group-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.25rem;
-  }
-  .stock-info {
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-  }
-  .stock-info img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-  }
-  .stock-info .symbol {
-    font-weight: 500;
-  }
-  .stock-info .ticker {
-    display: block;
-    font-size: .875rem;
-    color: var(--sv-grey);
-  }
-  .stock-stats {
-    text-align: right;
-  }
-  .stock-stats .price {
-    font-weight: 500;
-  }
-  .stock-stats .change {
-    font-size: .875rem;
-  }
-  .stock-stats .change.red {
-    color: var(--sv-red);
-  }
-  .stock-stats .change.green {
-    color: var(--sv-green);
-  }
- 
-  /* BUTTONS */
-  .btn-outline-danger,
-  .btn-outline-success {
-    font-size: .85rem;
-    padding: .25rem .75rem;
-  }
- 
-  /* TABLE (on Portfolio page) */
-  .table th,
-  .table td {
-    vertical-align: middle;
-  }
- 
-  /* CHART CONTAINERS */
-  canvas {
-    max-width: 100%;
-  }
- /* Make STOCKVISION big & bold on the navbar */
-.navbar-brand {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  white-space: nowrap !important;
+  --sv-blue: #1e87f0;
+  --sv-red: #e74c3c;
+  --sv-green: #27ae60;
+  --sv-grey: #6c757d;
 }
-.navbar-brand {
+
+body {
+  background: #f8f9fa;
+}
+
+.navbar {
+  background-color: var(--sv-blue) !important;
+}
+
+.navbar-brand,
+.nav-link {
   color: #fff !important;
+  font-weight: 600;
 }
-/* Shift the brand slightly left */
-.navbar-brand {
-  margin-left: -3.0 rem !important; /* adjust this value as needed */
+
+header {
+  text-align: center;
+  padding: 5rem 0;
 }
-.fw-medium {
-  font-weight: 500 !important;
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--sv-blue);
+  margin-bottom: 0.5rem;
+}
+
+header p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  background-color: var(--sv-blue);
+  border-color: var(--sv-blue);
+}
+
+.text-danger {
+  color: var(--sv-red) !important;
+}
+
+.text-success {
+  color: var(--sv-green) !important;
 }

@@ -18,6 +18,16 @@ exports.modules = {
 
 
 
+/***/ }),
+
+/***/ "./node_modules/bootstrap-icons/font/bootstrap-icons.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/bootstrap-icons/font/bootstrap-icons.css ***!
+  \***************************************************************/
+/***/ (() => {
+
+
+
 /***/ })
 
 };
